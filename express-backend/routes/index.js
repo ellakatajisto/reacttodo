@@ -53,5 +53,6 @@ router.use(express.json())
 
 router.get('/chat', chatController.chat)
 router.get('/', indexController.index)
+router.get('/todoindex', indexController.showTodos)
 
 module.exports = router
